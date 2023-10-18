@@ -1,0 +1,25 @@
+spring.cassandra:
+  keyspace-name: demo
+  username: FILL_IN_USERNAME
+  password: FILL_IN_PASSWORD
+  schema-action: CREATE_IF_NOT_EXISTS # for dev purpose
+  request:
+    timeout: 10s
+  connection:
+    connect-timeout: 10s
+    init-query-timeout: 10s
+
+logging:
+  level:
+    root: debug
+    jdk:
+      event:
+        security: warn
+    sun:
+      rmi: warn
+    javax:
+      management: warn
+
+datastax.astra:
+  # You must download it before
+  secure-connect-bundle: classpath:secure-connect-bundle.zip

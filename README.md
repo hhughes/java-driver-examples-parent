@@ -1,0 +1,1 @@
+Basic examples for using Cassandra Java-Driver with Datastax Astra
